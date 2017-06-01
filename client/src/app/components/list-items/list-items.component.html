@@ -2,7 +2,12 @@
   <h1>List Items</h1>
   <ul class="list-group">
     <li class="list-group-item" *ngFor="let item of items">
-      {{ item.title }}
+      <p>{{ item.title }}</p>
+      <hr>
+      <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+      </label>
     </li>
   </ul>
 </div>
