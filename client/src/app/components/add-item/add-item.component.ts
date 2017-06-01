@@ -19,4 +19,8 @@ export class AddItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+      alert("Submitting...")
+  }
+
 }
