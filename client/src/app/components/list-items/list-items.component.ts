@@ -14,7 +14,15 @@ export class ListItemsComponent implements OnInit {
   constructor() {
     // use mock data for now. will replace with db query later.
     this.items = [];
-
+    this.items.push(new ListItem(
+      0, 'wash dishes'
+    ));
+    this.items.push(new ListItem(
+      1, 'do programming'
+    ));
+    this.items.push(new ListItem(
+      1, 'clean room' 
+    ));
   }
 
   ngOnInit() {

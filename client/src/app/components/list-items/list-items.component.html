@@ -1,3 +1,8 @@
-<p>
-  list-items works!
-</p>
+<div class="container">
+  <h1>List Items</h1>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of items">
+      {{ item.title }}
+    </li>
+  </ul>
+</div>
