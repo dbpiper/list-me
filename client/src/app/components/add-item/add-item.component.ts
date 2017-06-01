@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ListItem } from '../../models/list-item'
+
 @Component({
   selector: 'add-item',
   templateUrl: './add-item.component.html',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddItemComponent implements OnInit {
 
-  constructor() { }
+  model: ListItem;
+
+  constructor() {
+    //TODO: fetch new id by getting id of last item in DB
+    this.model = new ListItem(0, '');
+  }
 
   ngOnInit() {
   }
