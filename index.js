@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 const html = __dirname + "/client/dist/"
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const app = express();
 
