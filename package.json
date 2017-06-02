@@ -1,0 +1,25 @@
+{
+  "name": "list-me",
+  "version": "1.0.0",
+  "description": "A website of lists. Starting with todo lists.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbpiper/list-me.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbpiper/list-me/issues"
+  },
+  "homepage": "https://github.com/dbpiper/list-me#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "serve-favicon": "^2.4.3"
+  }
+}
