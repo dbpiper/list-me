@@ -23,6 +23,7 @@
     "@ngtools/webpack": "^1.4.0",
     "core-js": "^2.4.1",
     "css-loader": "^0.28.4",
+    "postcss-loader": "^2.0.5",
     "raw-loader": "^0.5.1",
     "rxjs": "^5.1.0",
     "style-loader": "^0.18.1",
