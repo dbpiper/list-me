@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm install -g @angular/cli rxjs",
-    "postinstall": "cd client && npm install && ng build",
+    "postinstall": "cd client && ng build --aot -prod",
     "start": "node index.js"
   },
   "repository": {
