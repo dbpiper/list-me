@@ -20,3 +20,5 @@ router.put('/items/:id', function(req, res) {
 router.delete('/items/:id', function(req, res) {
   res.send({type: 'DELETE'})
 });
+
+module.exports = router;
