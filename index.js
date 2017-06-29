@@ -24,10 +24,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-if (app.get('env') === 'development')
-{
-  app.listen(port, function () {
+app.listen(port, function () {
   console.log('Example app listening on port: ' + port);
-  });
-}
+});
+
 module.exports = app;
