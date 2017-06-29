@@ -26,8 +26,6 @@ export class ItemsService {
       headers.append('Content-Type',
           'application/json; charset=utf-8');
 
-      console.log(JSON.stringify(item));
-
       this.http.post('/api/items', item, headers)
           .subscribe(
             () => {},

@@ -22,8 +22,6 @@ export class AddItemComponent implements OnInit {
   }
 
   onSubmit() {
-      alert("Submitting...");
-      alert(this.model);
       this.itemsService.createItem(this.model);
   }
 
