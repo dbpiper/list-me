@@ -10,11 +10,11 @@ const port = process.env.PORT || 80;
 
 const app = express();
 
-app.use('/api', routes);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(html));
+app.use('/api', routes);
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(html,'index.html'));

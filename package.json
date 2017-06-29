@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd client && npm install && ng build --aot -prod",
-    "start": "node index.js"
+    "start": "cd client && ng build && cd .. && node index.js"
   },
   "repository": {
     "type": "git",
